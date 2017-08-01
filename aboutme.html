@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <title>Aliza Akhtar</title>
-  <style>
-    h1 {
+    <title>Aliza Akhtar</title>
+
+    <style type="text/css">
+
+	h1 {
       color: #5c0099;
     }
     h2 {
@@ -12,22 +13,51 @@
     }
     p {
       color: #9900ff;
-    }
-    body {
-      color: #e0b3ff;
+	 }
+	body {
       font: "Courier New", Courier, monospace;
+	  background-image:url(https://media.resources.festicket.com/www/admin/uploads/images/GrooveLochNess_Storr.jpg);
+	  background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: cover;
     }
-  </style>
+	
+    </style>
+
+    <script language="javascript" type="text/javascript">
+    function changeDivImage()
+    {
+        var imgPath = new String();
+        imgPath = document.body.style.backgroundImage;
+
+        if(imgPath == "url(https://media.resources.festicket.com/www/admin/uploads/images/GrooveLochNess_Storr.jpg)" || imgPath == "")
+        {
+            document.body.style.backgroundImage = "url(https://images.divisare.com/image/upload/c_fit,f_jpg,q_80,w_1200/v1/project_images/4188772/Divercity-SANTORINI-HOTEL-1.jpg)";
+        }
+        else
+        {
+            document.body.style.backgroundImage = "url(https://media.resources.festicket.com/www/admin/uploads/images/GrooveLochNess_Storr.jpg)";
+        }
+    }
+    </script>
+
 </head>
 
 <body>
- <h1>Aliza Akhtar</h1>
-<div align="center">
-<a href="me.html">About Me</a> |
-<a href="reflections.html">My Reflections</a> |
-<a href="projects.html">My Projects</a> 
-</div>
-  <p>Hi! My name is Aliza and this is my website. Feel free to explore!</p>
-</body>
 
+    <center>
+    <h1>Aliza Akhtar</h1>
+    <a href="me.html">About Me</a> |
+    <a href="reflections.html">My Reflections</a> |
+    <a href="projects.html">My Projects</a> 
+    <p>Hi! My name is Aliza and this is my website. Feel free to explore!</p>
+    <input type="button" value="Change Image" onclick="changeDivImage()" />
+	<br />
+	<br />
+	<div id="div1">
+    </div>
+    
+    </center>
+
+</body>
 </html>
