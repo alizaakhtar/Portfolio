@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+		<style>
+	body{
+		text-align: center;
+		background-color: #cce0ff;
+	}
+	button{
+			margin-left: 50px;
+		margin-right: 50px;
+		background-color:  #1a8cff;
+		border: none;
+		color: #cce0ff;
+	}
+	img{
+		height: 216px;
+		width: 385px;
+	}
+	h1{
+		font-family: "Courier New", Courier, monospace;
+	}
+		</style>
+    </head>
+    <body onload= "loadImage()">
+        <h1>Photo Gallery</h1>
+        
+        <img id = "pics" src = "URL">
+        <br>
+        
+        <button id = "left" onclick = "left()">Left</button>
+        
+        <button id = "right" onclick = "right()">Right</button>
+        
+    </body>
+	<script>
+	var imgindex = 0;
+
+	var images = ["https://wallpaperscraft.com/image/japan_sky_beautiful_scenery_82811_1920x1080.jpg" , "https://wallpaperscraft.com/image/beautiful_scenery_mountains_lake_nature_93318_1920x1080.jpg" , "http://cdn.wallpapersafari.com/89/37/e70jtC.jpg" , "https://wallpaperscraft.com/image/mountains_nature_sky_river_beautiful_scenery_93460_1920x1080.jpg" , "http://eskipaper.com/images/colorful-scenery-1.jpg"];
+
+	function loadImage(){
+		document.getElementById("pics").src = images[imgindex];
+	}
+
+	function left(){
+		imgindex--; 
+		
+		if(imgindex < 0){
+		imgindex = 4;
+	}
+		loadImage();
+		document.getElementById("demo").innerHTML = imgindex;
+	}
+
+	function right(){
+		imgindex--; 
+		
+		if(imgindex < 0){
+		imgindex = 4;
+	}
+		loadImage();
+		document.getElementById("demo").innerHTML = imgindex;
+	}
+
+	</script>
+</html>
+
+
+
