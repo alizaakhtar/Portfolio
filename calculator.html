@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+		<style>
+		h1{
+			color: #267326;
+			}
+		input{
+			border-color: #206020;
+			color: #267326;
+			}
+		.button {
+			background-color: #66cc66;
+			border: none;
+			color: white;
+			height:100px
+			width: 250px;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		.buttons {
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			height:100px
+			width: 250px;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		td{
+			padding: 8px;
+			}
+		</style>
+    </head>
+    <body>
+	<center>
+    <h1>Calculator</h1>
+    
+        <table>
+		<tr><input type = "text" id = "num"></tr>
+        <tr>
+			<td><button class ="button" onclick="seven()">7</button></td>
+			<td><button class ="button" onclick="eight()">8</button></td>
+			<td><button class ="button" onclick="nine()">9</button></td>
+			<td><button class ="buttons" onclick="add()">+</button></td>
+		</tr>
+		<tr>
+			<td><button class ="button" onclick="four()">4</button></td>
+			<td><button class ="button" onclick="five()">5</button></td>
+			<td><button class ="button" onclick="six()">6</button></td>
+			<td><button class ="buttons" onclick="subtract()">-</button></td>
+		</tr>
+		<tr>
+			<td><button class ="button" onclick="one()">1</button></td>
+			<td><button class ="button" onclick="two()">2</button></td>
+			<td><button class ="button" onclick="three()">3</button></td>
+			<td><button class ="buttons" onclick="multiply()">*</button></td>
+		</tr>
+		
+		<tr>
+			<td><button class ="button" onclick="decimal()">.</button></td>
+			<td><button class ="button" onclick="zero()">0</button></td>
+			<td><button class ="button" onclick="erase()">ce</button></td>
+			<td><button class ="buttons" onclick="divide()">/</button></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><button class ="buttons" onclick="total()">=</button></td>
+			<td></td>
+		</tr>
+        </table>
+		<script>
+		function seven(){
+			document.getElementById("num").value += 7;
+		}
+		function eight(){
+			document.getElementById("num").value += 8;
+		}
+		function nine(){
+			document.getElementById("num").value += 9;
+		}
+		function add(){
+			document.getElementById("num").value += "+";
+		}
+		function four(){
+			document.getElementById("num").value += 4;
+		}
+		function five(){
+			document.getElementById("num").value += 5;
+		}
+		function six(){
+			document.getElementById("num").value += 6;
+		}
+		function subtract(){
+			document.getElementById("num").value += "-";
+		}
+		function one(){
+			document.getElementById("num").value += 1;
+		}
+		function two(){
+			document.getElementById("num").value += 2;
+		}
+		function three(){
+			document.getElementById("num").value += 3;
+		}
+		function multiply(){
+			document.getElementById("num").value += "*";
+		}
+		function decimal(){
+			document.getElementById("num").value += ".";
+		}
+		function zero(){
+			document.getElementById("num").value += 0;
+		}
+		function erase(){
+			document.getElementById("num").value = "";
+		}
+		function divide(){
+			document.getElementById("num").value += "/";
+		}
+		function total(){
+			document.getElementById("num").value = eval(document.getElementById("num").value);
+		}
+		</script>
+    </center>
+	</body>
+</html>
