@@ -61,10 +61,6 @@ def recipe():
         print("Thanks for visiting! Come again!")
         time.sleep(2)
         exit()
-    else:
-        time.sleep(1)
-        print("Incorrect choice. Try again.")
-        time.sleep(2)
 
 
 
