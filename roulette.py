@@ -8,7 +8,7 @@ output1 = random.choice(layer1)
 output2 = random.choice(layer2)
 output3 = random.randint(1,36)
 money = 500
-print("Welcome to online Roulette. You have $1,000 to bet and can play 3 times.")
+print("Welcome to online Roulette. You have $500 to bet and can play 3 times.")
 
 def game():
     global money
